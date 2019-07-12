@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import HeaderPage from './component/HeaderPage/HeaderPage';
+import NavBar from './component/NavBar/NavBar';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>Welcome to this page!</p>
-        </header>
-      </div>
+      <>
+        <HeaderPage/>
+        <NavBar/>
+        <h1>body text here!!!</h1>
+        
+      </>
     );
   }
 }
