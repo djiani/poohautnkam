@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HeaderPage from './component/HeaderPage/HeaderPage';
 import NavBar from './component/NavBar/NavBar';
+import Main from './component/Main/Main';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
       <>
         <HeaderPage/>
         <NavBar/>
-        <h1>body text here!!!</h1>
+        <Main/>
         
       </>
     );
