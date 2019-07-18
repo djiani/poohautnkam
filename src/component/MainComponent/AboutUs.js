@@ -1,11 +1,14 @@
 import React from 'react';
 //import { returnStatement } from '@babel/types';
-import { Col, Row, Card, Button } from 'react-bootstrap';
+import { Col, Row, Card } from 'react-bootstrap';
+import { Document, Page } from 'react-pdf';
+import book1 from '../../images/Book1.pdf';
 
 function AboutUs(props){
     return (
        <div>
            <ExecutiveTeam/>
+           <ByLaw />
        </div>
     );
 }
@@ -81,6 +84,19 @@ class ExecutiveTeam extends React.Component{
 
 
 
-function ByLaw(props){
-    
-}
+
+
+class ByLaw extends React.Component {
+   
+
+
+    render(){
+        return (
+                <canvas>
+
+                </canvas>
+            
+        )
+    }
+
+} 
