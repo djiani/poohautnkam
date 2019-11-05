@@ -6,10 +6,10 @@ import {Row, Col, } from 'react-bootstrap';
 
 function Main(props){
     return (
-        <Container>
+        <Container fluid >
             <Row>
                 <Col>
-                    <h1>Welcome to POO Haut-Nkam Association Georgia</h1>
+                    
                 </Col>
             </Row>
             <Row>

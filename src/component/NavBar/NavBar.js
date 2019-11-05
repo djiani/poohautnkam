@@ -6,16 +6,16 @@ function NavBar(props) {
     return (
         <React.Fragment>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Container>
-                <Navbar.Brand href="/home">PO0 HAUT-NKAM</Navbar.Brand>
+                <Container fluid>
+                <Navbar.Brand href="/home">POO HAUT-NKAM</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
                         <NavDropdown title="About US" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="/aboutus/our_vision">Our vision</NavDropdown.Item>
+                            <NavDropdown.Item href="/aboutus/ourvision">Our vision</NavDropdown.Item>
                             <NavDropdown.Item href="/aboutus/executive_team">Executive Team</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/aboutus/by_laws">By Laws</NavDropdown.Item>
+                            <NavDropdown.Item href="/aboutus/bylaws">By Laws</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/projects">Projects</Nav.Link>
                         <NavDropdown title="Media" id="collasible-nav-dropdown">
