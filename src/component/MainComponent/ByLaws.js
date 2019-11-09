@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import { Document, Page } from "react-pdf";
-import book1 from '../../images/Book1.pdf';
+import { Document, Page, pdfjs} from "react-pdf";
+import './MainStyle.css';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+
+
 
 export default class ByLaws extends Component {
   state = { numPages: null, pageNumber: 1 };
@@ -10,9 +14,10 @@ export default class ByLaws extends Component {
   };
 
   goToPrevPage = () =>
-    this.setState(state => ({ pageNumber: state.pageNumber - 1 }));
+    this.setState(state => ({ pageNumber: state.pageNumber > 1? state.pageNumber - 1:0 }));
   goToNextPage = () =>
-    this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
+    this.setState(state => ({ pageNumber: state.pageNumber < state.numPages? state.pageNumber + 1: state.numPages }));
+
 
   render() {
     const { pageNumber, numPages } = this.state;
@@ -24,12 +29,13 @@ export default class ByLaws extends Component {
           <button onClick={this.goToNextPage}>Next</button>
         </nav>
 
-        <div style={{ width: 600 }}>
+        <div style={{ width: "100%" }}>
           <Document
-            file="../../images/Book1.pdf"
+            file="/byLaws/book.pdf"
             onLoadSuccess={this.onDocumentLoadSuccess}
+            className="docFile"
           >
-            <Page pageNumber={pageNumber} width={600} />
+            <Page pageNumber={pageNumber}  className="pagepdf" />
           </Document>
         </div>
 

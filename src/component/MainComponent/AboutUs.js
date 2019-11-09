@@ -31,10 +31,10 @@ function AboutUs(props){
             </Accordion.Collapse>
         </Card>
         <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
+            <Accordion.Toggle as={Card.Header} eventKey="2">
             2014-2016
             </Accordion.Toggle>
-            <Accordion.Collapse eventKey="1">
+            <Accordion.Collapse eventKey="2">
             <Card.Body>
                 <h1>Executive Team from 2014 to 2016</h1>
                 <ExecutiveTeam />
