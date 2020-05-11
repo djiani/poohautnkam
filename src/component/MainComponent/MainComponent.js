@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Home from '../MainComponent/Home';
-import AboutUs from '../MainComponent/AboutUs';
+import Home from './Home/Home';
+import AboutUs from '../MainComponent/AboutUS/AboutUs';
 import OurVision from '../MainComponent/OurVision';
 import ByLaws from '../MainComponent/ByLaws';
 import Projects from '../MainComponent/Projects';

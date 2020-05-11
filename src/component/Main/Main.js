@@ -6,12 +6,7 @@ import {Row, Col, } from 'react-bootstrap';
 
 function Main(props){
     return (
-        <Container fluid >
-            <Row>
-                <Col>
-                    
-                </Col>
-            </Row>
+        <Container >
             <Row>
                 <Col sm={9}>
                     <MainComponent> ${props.children}</MainComponent>

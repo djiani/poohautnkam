@@ -1,0 +1,11 @@
+.homeBlock{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+}
+
+.carouselImg{
+    margin: 0 auto;
+    width: 80%;
+    height: 80vh;
+}

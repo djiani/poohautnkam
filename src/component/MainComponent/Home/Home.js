@@ -1,14 +1,15 @@
 import React from 'react';
 import {Carousel } from 'react-bootstrap';
-import bbq from '../../images/bbq.jpg';
-import event1 from '../../images/event1.jpg';
-import event2 from '../../images/event2.jpg';
+import bbq from '../../../images/bbq.jpg';
+import event1 from '../../../images/event1.jpg';
+import event2 from '../../../images/event2.jpg';
+import './home.css';
+
+
 function Home(props){
     return (
-       <div>
-           
+       <div className="homeBlock">
             <ControlledCarousel/>
-        
        </div>
     );
 }
@@ -24,7 +25,7 @@ function ControlledCarousel() {
         <Carousel>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block carouselImg"
             src={bbq}
             alt="First slide"
           />
@@ -35,7 +36,7 @@ function ControlledCarousel() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block carouselImg"
             src={event1}
             alt="Third slide"
           />
@@ -47,7 +48,7 @@ function ControlledCarousel() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block carouselImg"
             src= {event2}
             alt="Third slide"
           />
