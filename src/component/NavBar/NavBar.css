@@ -1,0 +1,8 @@
+.navBar{
+    background-color: rgb(247, 247, 93);
+    color:white;
+}
+
+Nav.Link:hover{
+    background-color: tomato;
+}
