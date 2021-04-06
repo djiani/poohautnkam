@@ -20,13 +20,12 @@ export default SideComponent;
 function Meeting(props) {
     return (
         <Card border="primary" className="card" >
-            <Card.Header>Monthly Meeting</Card.Header>
-            <Card.Body>
-                <Card.Title></Card.Title>
+            <Card.Header className="cardhearder text-center">Monthly Meeting</Card.Header>
+            <Card.Body className="cardbody">
                 <Card.Text>
-                    <span className="h4">Saturday: </span> 13th, July 2019 at 8:30pm <br />
-                    <span className="h4">Adresse: </span>: 5754 Vinings Retrait Way SW Mableton, GA 30126.<br />
-                    <span className="h4">Reception:</span> Mr. Noufi Thomas <br />
+                    <span className="h6">Saturday: </span> 13th, July 2019 at 8:30pm <br />
+                    <span className="h6">Adresse: </span>: 5754 Vinings Retrait Way SW Mableton, GA 30126.<br />
+                    <span className="h6">Reception:</span> Mr. Noufi Thomas <br />
                 </Card.Text>
             </Card.Body>
         </Card>

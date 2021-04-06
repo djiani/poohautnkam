@@ -1,6 +1,9 @@
 .navBar{
-    background-color: rgb(247, 247, 93);
-    color:white;
+    color: red;
+    background-color: #E8C029;
+    
+    
+    
 }
 
 Nav.Link:hover{

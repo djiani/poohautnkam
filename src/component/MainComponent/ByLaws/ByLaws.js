@@ -1,20 +1,26 @@
 import React, { Component } from "react";
 import { Document, Page, pdfjs} from "react-pdf";
-import './MainStyle.css';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import './ByLaws.css';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
 
 
 export default class ByLaws extends Component {
-  state = { numPages: null, pageNumber: 1 };
-
+  constructor(props){
+    super(props);
+    this.state = { numPages: null, pageNumber: 1 };
+  }
+  
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages });
   };
 
-  goToPrevPage = () =>
+  goToPrevPage = () =>{
+    
     this.setState(state => ({ pageNumber: state.pageNumber > 1? state.pageNumber - 1:0 }));
+    
+  }
   goToNextPage = () =>
     this.setState(state => ({ pageNumber: state.pageNumber < state.numPages? state.pageNumber + 1: state.numPages }));
 
@@ -25,13 +31,13 @@ export default class ByLaws extends Component {
     return (
       <div>
         <nav>
-          <button onClick={this.goToPrevPage}>Prev</button>
+          <button onClick={console.log()}>Prev</button>
           <button onClick={this.goToNextPage}>Next</button>
         </nav>
 
-        <div style={{ width: "100%" }}>
+        <div >
           <Document
-            file="/byLaws/book.pdf"
+            file="/byLaws/poohautnkambalaws.pdf"
             onLoadSuccess={this.onDocumentLoadSuccess}
             className="docFile"
           >
