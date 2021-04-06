@@ -1,3 +1,9 @@
 .card{
 margin-bottom: 10px;
 }
+.cardhearder{
+    background-color: #4FA8C1;
+}
+.cardbody{
+    background-color: #F9F3F7;
+}

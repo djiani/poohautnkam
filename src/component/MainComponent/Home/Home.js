@@ -8,9 +8,14 @@ import './home.css';
 
 function Home(props){
     return (
+      <>
        <div className="homeBlock">
             <ControlledCarousel/>
        </div>
+       <div className="homeBlock">
+          <p>block2</p>
+       </div>
+      </>
     );
 }
 
@@ -19,13 +24,24 @@ export default Home;
 
 
 function ControlledCarousel() {
-    
+  
   
     return (
-        <Carousel>
+        <Carousel >
+          <Carousel.Item>
+            <img 
+            className="d-block w-100 carouselImg"
+            src= "https://via.placeholder.com/300.png"
+            alt=""
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block carouselImg"
+            className="d-block  w-100 carouselImg"
             src={bbq}
             alt="First slide"
           />
@@ -36,7 +52,7 @@ function ControlledCarousel() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block carouselImg"
+            className="d-block w-100 carouselImg"
             src={event1}
             alt="Third slide"
           />
@@ -48,7 +64,7 @@ function ControlledCarousel() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block carouselImg"
+            className="d-block w-100 carouselImg"
             src= {event2}
             alt="Third slide"
           />
