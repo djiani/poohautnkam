@@ -17,7 +17,7 @@ function MainComponent(props){
             <Route exact path="/aboutus/executive_team" component={AboutUs}/>
             <Route exact path="/aboutus/ourvision" component={OurVision}/>
             <Route exact path="/aboutus/bylaws" component={ByLaws}/>
-            <Route exact path="/media/gallery" component={ByLaws}/>
+            <Route exact path="/media/gallery" component={Projects}/>
             <Route exact path="/projects" component={Projects}/>
             <Route exact path="/membership" component={Projects}/>
             <Route exact path="/report" component={Projects}/>
