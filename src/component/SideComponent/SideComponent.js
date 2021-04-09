@@ -23,9 +23,9 @@ function Meeting(props) {
             <Card.Header className="cardhearder text-center">Monthly Meeting</Card.Header>
             <Card.Body className="cardbody">
                 <Card.Text>
-                    <p><span class="badge badge-success">Date: </span> 13th, July 2019 at 8:30pm </p>
-                    <p><span class="badge badge-success">Adresse: </span> 5754 Vinings Retrait Way SW Mableton, GA 30126.</p>
-                    <p><span class="badge badge-success">Reception: </span> Mr. Noufi Thomas</p> 
+                    <p><span class="badge badge-success">Date: </span> 10th, April 2021</p>
+                    <p><span class="badge badge-success">Time: </span>  9pm </p>
+                    <p><span class="badge badge-success">Join Zoom Meeting</span> https://us02web.zoom.us/j/81847247919?pwd=Ui80RUhjRnJhNDBRWGVuNDJ0bStZUT09</p>
                 </Card.Text>
             </Card.Body>
         </Card>
