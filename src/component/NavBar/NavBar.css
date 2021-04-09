@@ -1,11 +1,28 @@
 .navBar{
-    color: red;
-    background-color: #E8C029;
+    background-color: #f1f50a;
     
     
     
 }
 
-Nav.Link:hover{
-    background-color: tomato;
+a.nav-link {
+    font-weight: bolder;
+    color: red; /*will change color of text within the element */
 }
+    
+a.nav-link:hover {
+    background-color:green; /*will change background-color of element on hover */
+    color: white; /*will change color of text within the element on hover */
+}
+
+/* .dropdown-menu{
+    background-color: yellow;
+}
+.dropdown-item{
+
+}
+
+.dropdown-item:hover{
+    background-color:green; 
+    color: white; 
+} */

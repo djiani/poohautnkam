@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Document, Page, pdfjs} from "react-pdf";
+import {ButtonToolbar,ButtonGroup,Button } from 'react-bootstrap';
 import './ByLaws.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -17,8 +18,8 @@ export default class ByLaws extends Component {
   };
 
   goToPrevPage = () =>{
-    
-    this.setState(state => ({ pageNumber: state.pageNumber > 1? state.pageNumber - 1:0 }));
+    console.log("test passed");
+    this.setState(state => ({ pageNumber: state.pageNumber > 1? state.pageNumber - 1:1 }));
     
   }
   goToNextPage = () =>
@@ -29,13 +30,19 @@ export default class ByLaws extends Component {
     const { pageNumber, numPages } = this.state;
 
     return (
-      <div>
-        <nav>
-          <button onClick={console.log()}>Prev</button>
-          <button onClick={this.goToNextPage}>Next</button>
-        </nav>
+      <div className="DocBlock">
+     
+        <ButtonToolbar className="justify-content-between" aria-label="Toolbar with Button groups">
+          <ButtonGroup aria-label="First group">
+            <Button variant="primary" onClick={this.goToPrevPage}>Prev</Button>
+          </ButtonGroup>
+          <ButtonGroup aria-label="First group">
+            <Button variant="primary" onClick={this.goToNextPage}>Next</Button>
+          </ButtonGroup>
+    
+        </ButtonToolbar>
 
-        <div >
+        <div className="DocumentPage">
           <Document
             file="/byLaws/poohautnkambalaws.pdf"
             onLoadSuccess={this.onDocumentLoadSuccess}

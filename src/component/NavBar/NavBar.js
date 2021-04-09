@@ -18,7 +18,7 @@ function NavBar(props) {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item eventKey="1.3" href="/aboutus/bylaws">By Laws</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link eventKey="2" href="/projects" >Projects</Nav.Link>
+                            <Nav.Link eventKey="3" href="/projects" >Projects</Nav.Link>
                             <NavDropdown title="Media" id="collasible-nav-dropdown">
                                 <NavDropdown.Item eventKey="3.1" href="media/gallery">Photo Gallery</NavDropdown.Item>
                                 <NavDropdown.Item eventKey="3.2" href="media/video">Video Gallery</NavDropdown.Item>
