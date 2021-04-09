@@ -23,9 +23,9 @@ function Meeting(props) {
             <Card.Header className="cardhearder text-center">Monthly Meeting</Card.Header>
             <Card.Body className="cardbody">
                 <Card.Text>
-                    <span className="h6">Saturday: </span> 13th, July 2019 at 8:30pm <br />
-                    <span className="h6">Adresse: </span>: 5754 Vinings Retrait Way SW Mableton, GA 30126.<br />
-                    <span className="h6">Reception:</span> Mr. Noufi Thomas <br />
+                    <p><span class="badge badge-success">Date: </span> 13th, July 2019 at 8:30pm </p>
+                    <p><span class="badge badge-success">Adresse: </span> 5754 Vinings Retrait Way SW Mableton, GA 30126.</p>
+                    <p><span class="badge badge-success">Reception: </span> Mr. Noufi Thomas</p> 
                 </Card.Text>
             </Card.Body>
         </Card>
@@ -35,13 +35,13 @@ function Meeting(props) {
 function News(props) {
     return (
         <Card border="primary" className="card">
-            <Card.Header>News</Card.Header>
-            <ListGroup  variant="flush" style={{width:"95%", margin:"0 auto", paddingBottom:"10px"}}>
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-            </ListGroup>
-           
+            <Card.Header className="cardhearder text-center">News</Card.Header>
+            <Card.Body className="cardbody">
+                <Card.Title>Poo Haut Nkam Ga Election Week</Card.Title>
+                <Card.Text>
+                    <p>Date: <span class="badge badge-success">Saturday April 10th</span></p>
+                </Card.Text>
+            </Card.Body>
             
         </Card>
     )

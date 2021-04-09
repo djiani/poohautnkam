@@ -7,12 +7,12 @@ import  './Main.css';
 
 function Main(props){
     return (
-        <Container className="Main">
+        <Container className="main">
             <Row>
-                <Col sm={9} >
+                <Col sm={12} md={9} >
                     <MainComponent> ${props.children}</MainComponent>
                 </Col>
-                <Col sm={3}>
+                <Col sm={12} md={3}>
                     <SideComponent>${props.children}</SideComponent>
                 </Col>
             </Row>

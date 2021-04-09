@@ -11,6 +11,7 @@ class App extends Component {
         <HeaderPage/>
         <NavBar/>
         <Main/>
+        
       </>
     );
   }

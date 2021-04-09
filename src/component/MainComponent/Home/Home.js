@@ -3,19 +3,17 @@ import {Carousel } from 'react-bootstrap';
 import bbq from '../../../images/bbq.jpg';
 import event1 from '../../../images/event1.jpg';
 import event2 from '../../../images/event2.jpg';
+import logo from '../../../images/hautnkam-logo.jpg';
 import './home.css';
 
 
 function Home(props){
     return (
-      <>
-       <div className="homeBlock">
+       <div>
             <ControlledCarousel/>
        </div>
-       <div className="homeBlock">
-          <p>block2</p>
-       </div>
-      </>
+       
+
     );
 }
 
@@ -29,50 +27,36 @@ function ControlledCarousel() {
     return (
         <Carousel >
           <Carousel.Item>
-            <img 
-            className="d-block w-100 carouselImg"
-            src= "https://via.placeholder.com/300.png"
-            alt=""
-            />
+          <img
+            className="img-fluid d-block mx-auto  carouselImg"
+            src={logo}
+            alt="First slide"
+          />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 className="text-primary">Poo Haut Nkam Election Week</h1>
+            <p className="text-success ">Comme vous le savez tous le J.J pour les elections c est pour ce Samedi 10 Avril.  Le comite d election vous fait part des differents candidats enregistrer jusqu a ce jour.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block  w-100 carouselImg"
+            className="img-fluid d-block mx-auto carouselImg"
             src={bbq}
             alt="First slide"
           />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 carouselImg"
+            className="img-fluid d-block mx-auto  carouselImg"
             src={event1}
             alt="Third slide"
           />
-      
-          {/* <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 carouselImg"
+            className="img-fluid d-block mx-auto carouselImg"
             src= {event2}
             alt="Third slide"
           />
-{/*       
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
     );
