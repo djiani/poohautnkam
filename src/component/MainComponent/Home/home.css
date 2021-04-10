@@ -8,10 +8,10 @@
 
 .carousel-indicators li{
     background-color: red;
-    color: green;
+    height: 5px;
 }
 
 .carousel-control-prev, .carousel-control-next{
-    background-color: red;
-    color: green;
+    background-color: yellowgreen;
+    
 }

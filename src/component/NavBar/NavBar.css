@@ -5,9 +5,9 @@
     
 }
 
-a.nav-link {
+.nav-link {
     font-weight: bolder;
-    color: red; /*will change color of text within the element */
+    color: white; /*will change color of text within the element */
 }
     
 a.nav-link:hover {

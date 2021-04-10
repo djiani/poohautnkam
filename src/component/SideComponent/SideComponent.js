@@ -25,7 +25,7 @@ function Meeting(props) {
                 <Card.Text>
                     <p><span class="badge badge-success">Date: </span> 10th, April 2021</p>
                     <p><span class="badge badge-success">Time: </span>  9pm </p>
-                    <p><span class="badge badge-success">Join Zoom Meeting</span> https://us02web.zoom.us/j/81847247919?pwd=Ui80RUhjRnJhNDBRWGVuNDJ0bStZUT09</p>
+                    <a href=" https://us02web.zoom.us/j/81847247919?pwd=Ui80RUhjRnJhNDBRWGVuNDJ0bStZUT09" className="btn btn-block btn-link">Click to Join Zoom Meeting</a>
                 </Card.Text>
             </Card.Body>
         </Card>

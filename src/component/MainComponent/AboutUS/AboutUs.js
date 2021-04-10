@@ -62,28 +62,28 @@ class ExecutiveTeam extends React.Component{
         name: "Thomas Nouafi", 
         email: "thomas@gmail.com",
         tel: "478 387-4572", 
-        img: require('../../../images/pp.jpg') 
+        img: require('../../../images/pp2.jpg') 
     },
     {
         post: "Vice President 1 ",
         name: "Thomas Nouafi", 
         email: "thomas@gmail.com",
         tel: "478 387-4572", 
-        img: require('../../../images/pp.jpg') 
+        img: require('../../../images/pp2.jpg') 
     },
     {
         post: "Vice President 1 ",
         name: "Thomas Nouafi", 
         email: "thomas@gmail.com",
         tel: "478 387-4572", 
-        img: require('../../../images/pp.jpg') 
+        img: require('../../../images/pp2.jpg') 
     },
     {
         post: "Vice President 1 ",
         name: "Thomas Nouafi", 
         email: "thomas@gmail.com",
         tel: "478 387-4572", 
-        img: require('../../../images/pp.jpg') 
+        img: require('../../../images/pp2.jpg') 
     }
     
     ]
@@ -102,8 +102,8 @@ class ExecutiveTeam extends React.Component{
                             <h6>{team.post}</h6>
                             <div className="team">
                                 <span> {team.name} </span>
-                                <span> {team.tel}</span>
-                                <span > {team.email}</span>
+                                <span> {team.tel} </span>
+                                <span> {team.email} </span>
                             </div>
                             
                             
