@@ -23,8 +23,8 @@ function Meeting(props) {
             <Card.Header className="cardhearder text-center">Monthly Meeting</Card.Header>
             <Card.Body className="cardbody">
                 <Card.Text>
-                    <p><span class="badge badge-success">Date: </span> 10th, April 2021</p>
-                    <p><span class="badge badge-success">Time: </span>  9pm </p>
+                    <span className="badge badge-success">Date: 10th, April 2021</span> 
+                    <span className="badge badge-success">Time: 9pm</span>  
                     <a href=" https://us02web.zoom.us/j/81847247919?pwd=Ui80RUhjRnJhNDBRWGVuNDJ0bStZUT09" className="btn btn-block btn-link">Click to Join Zoom Meeting</a>
                 </Card.Text>
             </Card.Body>
@@ -37,9 +37,9 @@ function News(props) {
         <Card border="primary" className="card">
             <Card.Header className="cardhearder text-center">News</Card.Header>
             <Card.Body className="cardbody">
-                <Card.Title>Poo Haut Nkam Ga Election Week</Card.Title>
+                <Card.Title>Election Week</Card.Title>
                 <Card.Text>
-                    <p>Date: <span class="badge badge-success">Saturday April 10th</span></p>
+                     <span className="badge badge-success">Date: Saturday April 10th</span>
                 </Card.Text>
             </Card.Body>
             
@@ -50,11 +50,9 @@ function News(props) {
 function IncommingEvent(props) {
     return (
         <Card border="primary" className="card">
-            <Card.Header>Events</Card.Header>
+            <Card.Header className="cardhearder text-center">Events</Card.Header>
             <ListGroup variant="flush" style={{width:"95%", margin:"0 auto", paddingBottom:"10px"}}>
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                <ListGroup.Item>No InComming Events</ListGroup.Item>
             </ListGroup>
         </Card>
     )
