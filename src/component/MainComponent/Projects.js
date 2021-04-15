@@ -3,9 +3,9 @@ import React from 'react';
 function Projects(props){
     return (
        <div>
-           <h2>
-               Projects
-           </h2>
+           <h1>
+               Projects page in development
+           </h1>
        </div>
     );
 }
