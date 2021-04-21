@@ -1,5 +1,8 @@
 export default function Contactus(){
     return(
-        <h1>Contact page in development</h1>
+        <div>
+            <h5>Welcome to Poo Hautnkam Cultural Association of Greorgia</h5>
+            <p> To learn more about us, please refer to our mission</p>
+        </div>
     )
 }

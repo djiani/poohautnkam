@@ -1,5 +1,5 @@
 import React, {useState } from "react";
-import {Row, Col, Alert, ResponsiveEmbed} from 'react-bootstrap';
+import {Row, Col, Alert, ResponsiveEmbed, OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 export default function Gallery() {
     
@@ -13,6 +13,11 @@ export default function Gallery() {
             {url:"https://sergemaillimediastudio.zenfolio.com/p711997624/ea0e2fb8c",
             msg: "Pooh Haut-Nkam NYE"}
         ]
+        const renderTooltip = (props) => (
+            <Tooltip id="button-tooltip" {...props}>
+              click here to open external site...
+            </Tooltip>
+          );
 
         if (show) {
             return (
@@ -33,19 +38,38 @@ export default function Gallery() {
                         <button  onClick={() => {setShow(true); setIndex(0)}} >
                             <img src="https://sergemaillimediastudio.zenfolio.com/img/s/v-10/p3426947615-2.jpg" width="100%"  alt={img[0].msg} className="img-thumbnail" />
                         </button>
-                        <a href={img[0].url} target="_blank" rel="noreferrer"><p>{img[0].msg}</p></a>
+                        <OverlayTrigger
+                            placement="top"
+                            delay={{ show: 250, hide: 400 }}
+                            overlay={renderTooltip}
+                        >
+                            <a href={img[0].url} target="_blank" rel="noreferrer"><h5>{img[0].msg}</h5></a>
+                        </OverlayTrigger>
                     </Col>
                     <Col sm={6} md={4}>
                         <button  onClick={() => {setShow(true); setIndex(1)}} >
                             <img src="https://sergemaillimediastudio.zenfolio.com/img/s/v-10/p2150553798-2.jpg" width="100%"  alt={img[1].msg}  className="img-thumbnail"/>
                         </button>
-                        <a href={img[1].url} target="_blank" rel="noreferrer"><p>{img[1].msg}</p></a>
+                        <OverlayTrigger
+                            placement="top"
+                            delay={{ show: 250, hide: 400 }}
+                            overlay={renderTooltip}
+                        >
+                            <a href={img[1].url} target="_blank" rel="noreferrer"><h5>{img[1].msg}</h5></a>
+                        </OverlayTrigger>
                     </Col>
                     <Col sm={6} md={4}>
                         <button  onClick={() => {setShow(true); setIndex(2)}} >
                             <img src="https://sergemaillimediastudio.zenfolio.com/img/s/v-10/p2699230092-2.jpg" width="100%"  alt={img[2].msg} className="img-thumbnail" />
                         </button>
-                        <a href={img[2].url} target="_blank" rel="noreferrer"><p>{img[2].msg}</p></a>
+                        
+                        <OverlayTrigger
+                            placement="top"
+                            delay={{ show: 250, hide: 400 }}
+                            overlay={renderTooltip}
+                        >
+                            <a href={img[2].url} target="_blank" rel="noreferrer"><h5>{img[2].msg}</h5></a>
+                        </OverlayTrigger>
                     </Col>
                 </Row>
             </div>
