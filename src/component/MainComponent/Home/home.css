@@ -15,3 +15,6 @@
     background-color: yellowgreen;
     
 }
+.carousel-inner{
+    height: 70vh;
+}
