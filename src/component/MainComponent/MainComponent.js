@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Home from './Home/Home';
 import AboutUs from './AboutUS/AboutUs';
-import OurVision from './OurVision';
+import OurVision from './OurVision/OurVision';
 import ByLaws from './ByLaws/ByLaws';
 import Projects from './Projects';
 import Gallery from './Media/Gallery/Gallery';

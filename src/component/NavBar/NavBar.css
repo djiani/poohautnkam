@@ -22,7 +22,7 @@ a.nav-link:hover {
 }
 
 .dropdown-menu{
-    background-color: yellow;
+    background-color: #3d5a80;
 }
 
 .dropdown-item{
@@ -30,6 +30,5 @@ a.nav-link:hover {
 }
 
 .dropdown-item:hover{
-    background-color:green; 
-    color: white; 
+    background-color: red; 
 }

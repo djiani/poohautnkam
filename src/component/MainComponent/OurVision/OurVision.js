@@ -1,12 +1,13 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
+import './OurVision.css';
 
 
 function OurVision(props){
     return (
         <div className="ourvision">
             <Card className="text-center mt-2">
-                <Card.Header className="bg-info text-white">Who are We?</Card.Header>
+                <Card.Header className=" h2 bg-info text-white">Who are We?</Card.Header>
                 <Card.Body>
                     <Card.Text>
                     We the descendants of western region of Cameroon, people from the division of Haut-Nkam, residing in Georgia USA. 
@@ -17,15 +18,15 @@ function OurVision(props){
                 </Card.Body>
             </Card>
             <Card className="text-center">
-            <Card.Header className="bg-info text-white">Our Mission</Card.Header>
+            <Card.Header className=" h2 bg-warning text-white">Our Mission</Card.Header>
                 <Card.Body>
                     <Card.Text>
                     To support and inspire the Haut Nkam community youth towards good education and academic success by bringing the community together to support them.
                     </Card.Text>
                 </Card.Body>
             </Card>
-            <Card className="text-center ">
-            <Card.Header className="bg-info text-white">Our Vision</Card.Header>
+            <Card className="text-center">
+            <Card.Header className="h2 bg-info text-white">Our Vision</Card.Header>
                 <Card.Body>
                     <Card.Text>
                     We plan and coordinate events intended to help motivate the Haut Nkam community 
@@ -37,7 +38,7 @@ function OurVision(props){
             </Card>
 
             <Card className="text-center">
-            <Card.Header className="bg-info text-white">Our Purpose</Card.Header>
+            <Card.Header className="h2 bg-warning text-white">Our Purpose</Card.Header>
                 <Card.Body>
                     <Card.Text className="text-justify">
                     The purposes of the HNC-LAP are: 
@@ -51,7 +52,6 @@ function OurVision(props){
                 </Card.Body>
             </Card>
 
- 
         </div>
     )
 }
