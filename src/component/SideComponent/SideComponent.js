@@ -23,8 +23,8 @@ function Meeting(props) {
             <Card.Header className="cardhearder text-center">Monthly Meeting</Card.Header>
             <Card.Body className="cardbody">
                 <Card.Text>
-                    <span className="badge badge-success">Date: 10th, April 2021</span> 
-                    <span className="badge badge-success">Time: 9pm</span>  
+                    <span className="badge badge-success">Date:</span> 10th, April 2021 <br/>
+                    <span className="badge badge-success">Time:</span> 9pm <br/>
                     <a href=" https://us02web.zoom.us/j/81847247919?pwd=Ui80RUhjRnJhNDBRWGVuNDJ0bStZUT09" className="btn btn-block btn-link">Click to Join Zoom Meeting</a>
                 </Card.Text>
             </Card.Body>
@@ -39,7 +39,7 @@ function News(props) {
             <Card.Body className="cardbody">
                 <Card.Title>Election Week</Card.Title>
                 <Card.Text>
-                     <span className="badge badge-success">Date: Saturday April 10th</span>
+                     <span className="badge badge-success">Date:</span> Saturday April 10th
                 </Card.Text>
             </Card.Body>
             
