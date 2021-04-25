@@ -4,7 +4,7 @@ import Home from './Home/Home';
 import AboutUs from './AboutUS/AboutUs';
 import OurVision from './OurVision/OurVision';
 import ByLaws from './ByLaws/ByLaws';
-import Projects from './Projects';
+import Projects from './Projects/Projects';
 import Gallery from './Media/Gallery/Gallery';
 import Donate from './Donate/Doante';
 import Membership from './Membership/Membership';

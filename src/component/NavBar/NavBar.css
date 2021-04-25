@@ -1,9 +1,7 @@
 .navBar{
     background-color: #293241;
-    color:white;
     
-    
-    
+     
 }
 .navbar-light .navbar-nav .nav-link {
     color:white;
@@ -13,7 +11,7 @@
 }
 .nav-link {
     font-weight: bolder;
-    color: white; /*will change color of text within the element */
+    color: black; /*will change color of text within the element */
 }
     
 a.nav-link:hover {

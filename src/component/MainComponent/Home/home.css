@@ -15,6 +15,7 @@
     background-color: yellowgreen;
     
 }
-.carousel-inner{
-    height: 70vh;
+
+.home .carousel-inner{
+    max-height: 70vh;
 }

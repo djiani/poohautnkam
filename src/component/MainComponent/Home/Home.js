@@ -27,7 +27,7 @@ function ControlledCarousel() {
   
   
     return (
-      <Carousel >
+      <Carousel className="home">
         <Carousel.Item>
           <img
             className="img-fluid d-block mx-auto carouselImg"
