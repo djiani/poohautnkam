@@ -82,7 +82,7 @@ export default function Projects(props){
         <Carousel.Item>
           <img
             className="img-fluid d-block mx-auto "
-            src={balafi}
+            src={ecole}
             alt="second slide"
           />
         </Carousel.Item>
