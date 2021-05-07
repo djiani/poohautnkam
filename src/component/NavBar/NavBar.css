@@ -30,3 +30,6 @@ a.nav-link:hover {
 .dropdown-item:hover{
     background-color: red; 
 }
+.navbar-toggler{
+    background-color: white;
+}

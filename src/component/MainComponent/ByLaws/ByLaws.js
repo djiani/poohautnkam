@@ -30,19 +30,19 @@ export default class ByLaws extends Component {
     const { pageNumber, numPages } = this.state;
 
     return (
-      <div className="DocBlock">
+      <div className="DocBlock p-2">
      
         <ButtonToolbar className="justify-content-between" aria-label="Toolbar with Button groups">
-          <ButtonGroup aria-label="First group">
-            <Button variant="primary" onClick={this.goToPrevPage}>Prev</Button>
+          <ButtonGroup aria-label="First group" className="btn-group-sm">
+            <Button variant="light" onClick={this.goToPrevPage}>Prev</Button>
           </ButtonGroup>
-          <ButtonGroup aria-label="First group">
-            <Button variant="primary" onClick={this.goToNextPage}>Next</Button>
+          <ButtonGroup aria-label="First group" className="btn-group-sm">
+            <Button variant="light" onClick={this.goToNextPage}>Next</Button>
           </ButtonGroup>
     
         </ButtonToolbar>
 
-        <div className="DocumentPage">
+        <div className="DocumentPage mt-2">
           <Document
             file="/byLaws/poohautnkambalaws.pdf"
             onLoadSuccess={this.onDocumentLoadSuccess}
@@ -50,11 +50,18 @@ export default class ByLaws extends Component {
           >
             <Page pageNumber={pageNumber}  className="pagepdf" />
           </Document>
+          <p>Page {pageNumber} of {numPages}</p>
         </div>
 
-        <p>
-          Page {pageNumber} of {numPages}
-        </p>
+        <ButtonToolbar className="justify-content-between" aria-label="Toolbar with Button groups">
+          <ButtonGroup aria-label="First group" className="btn-group-sm">
+            <Button variant="light" className="" onClick={this.goToPrevPage}>Prev</Button>
+          </ButtonGroup>
+          <ButtonGroup aria-label="First group" className="btn-group-sm">
+            <Button variant="light" onClick={this.goToNextPage}>Next</Button>
+          </ButtonGroup>
+    
+        </ButtonToolbar>
       </div>
     );
   }
