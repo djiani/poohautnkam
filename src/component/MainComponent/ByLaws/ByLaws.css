@@ -1,16 +1,10 @@
-.docFile{
-    text-align: center;
-}
-.pagepdf{
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-}
-
-.DocumentPage{
-    width: 100%;
-}
 
 .DocBlock{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+  }

@@ -46,7 +46,7 @@ export default class ByLaws extends Component {
           <Document
             file="/byLaws/poohautnkambalaws.pdf"
             onLoadSuccess={this.onDocumentLoadSuccess}
-            className="docFile"
+            className="docFile" 
           >
             <Page pageNumber={pageNumber}  className="pagepdf" />
           </Document>
