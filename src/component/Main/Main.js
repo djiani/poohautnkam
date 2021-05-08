@@ -9,10 +9,10 @@ function Main(props){
     return (
         <Container className="main">
             <Row>
-                <Col sm={12} md={9} >
+                <Col xs={12} sm={8} md={9}>
                     <MainComponent> ${props.children}</MainComponent>
                 </Col>
-                <Col sm={12} md={3}>
+                <Col xs={12} sm={4} md={3}>
                     <SideComponent>${props.children}</SideComponent>
                 </Col>
             </Row>
